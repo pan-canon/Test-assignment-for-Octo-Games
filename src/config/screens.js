@@ -2,15 +2,15 @@ export const screens = [
   // Screen 1
   {
     id: 'screen-1',
-    title: 'Start',
-    info: 'info 1',
+    title: 'Вступление',
+    info: 'Пример диалога',
     images: {
       male: './assets/scene1.png',
       female: './assets/scene1.png'
     },
     texts: {
-      male: 'Detective John arrives at the office.',
-      female: 'Detective Jane arrives at the office.'
+      male: 'Когда меня посадили в тюрьму, шёл дождь. Когда я выхожу — он всё ещё идёт. Словно и не прошли годы.',
+      female: 'Я тоже рада тебя видеть, ворчун. Здесь мокро и холодно, давай поболтаем уже в офисе.'
     },
     actions: {}
   },
@@ -18,29 +18,29 @@ export const screens = [
   {
     id: 'screen-2',
     title: 'Introduction',
-    info: 'info 2',
+    info: 'Пример диалога',
     images: {
       male: './assets/scene2.png',
       female: './assets/scene2.png'
     },
     texts: {
-      male: 'male 2',
-      female: 'female 2'
+      male: 'Офисе? Мне в полиции давно не рады.',
+      female: 'Как и мне — я уволилась ещё в прошлом году. Ты писал, что не знаешь, чем займёшься на свободе, и у меня появилась идея. Что думаешь о детективном агентстве?'
     },
     actions: {}
   },
   // Screen 3: игра начинается, первый выбор
   {
     id: 'screen-3',
-    title: 'Case',
-    info: 'info 3',
+    title: 'Первый выбор в игре',
+    info: 'К детективам обращается юная девушка, которая жалуется на то, что её кто-то сталкерит. В ходе общения мы узнаём, что она замужем. Девушка уточняет, что это дело может разрушить ее жизнь: карьеру, брак или всё сразу. Она не хочет лишних вопросов.',
     images: {
       male: './assets/scene3-1.png',
       female: './assets/scene3-2.png'
     },
     texts: {
-      male: 'Хочет поговорить только с мужичной',
-      female: 'Не хочет разговаривать с женщиной'
+      male: 'Клиентка хочет поговорить только с мужичной',
+      female: 'Клиентка не хочет разговаривать с женщиной'
     },
     actions: {
       male: [
@@ -53,14 +53,14 @@ export const screens = [
   // Screen 4-1: согласие говорить наедине
   {
     id: 'screen-4-1',
-    title: 'Case',
-    info: 'info 3',
+    title: 'Согласие говорить наедине',
+    info: 'Клиентка попробует “закрепить деловые отношения” традиционным для неё путём и это первый адалт контент, от которого можно отказаться. Это повлияет на развитие отношений напарников-детективов.',
     images: {
       male: './assets/scene3-3.png',
       female: './assets/scene3-3.png'
     },
     texts: {
-      male: 'John examines the crime scene.',
+      male: '',
       female: ''
     },
     actions: {
@@ -75,15 +75,15 @@ export const screens = [
   // Screen 4-2: отказ говорить наедине
   {
     id: 'screen-4-2',
-    title: 'Case',
-    info: 'info 3',
+    title: 'Отказ говорить наедине',
+    info: 'Так или иначе клиентка попросит ничего не сообщать её мужу, потому что он не понимает законов шоу-бизнеса, а она его очень любит и не хочет причинять боли.',
     images: {
       male: './assets/scene3-4.png',
       female: './assets/scene3-4.png'
     },
     texts: {
-      male: 'John examines the crime scene.',
-      female: 'Jane examines the crime scene.'
+      male: '',
+      female: ''
     },
     actions: {
       male: [
@@ -98,15 +98,15 @@ export const screens = [
   // Screen 5-1: первый адалт, принятие заказа
   {
     id: 'screen-5-1',
-    title: 'Introduction',
-    info: 'info 2',
+    title: 'Первый адалт, принятие заказа',
+    info: 'Первый адалт контент',
     images: {
       male: '',
       female: ''
     },
     texts: {
-      male: 'male 2',
-      female: 'female 2'
+      male: '',
+      female: ''
     },
     actions: {},
     relationshipThreshold: -1,
@@ -115,15 +115,15 @@ export const screens = [
   // Screen 5-2: отказ от адалта, принятие заказа
   {
     id: 'screen-5-2',
-    title: 'Introduction',
-    info: 'info 2',
+    title: 'Отказ от адалта, принятие заказа',
+    info: 'Так или иначе клиентка попросит ничего не сообщать её мужу, потому что он не понимает законов шоу-бизнеса, а она его очень любит и не хочет причинять боли.',
     images: {
       male: './assets/scene3-4.png',
       female: './assets/scene3-4.png'
     },
     texts: {
-      male: 'male 2',
-      female: 'female 2'
+      male: '',
+      female: ''
     },
     actions: {
       male: [
@@ -139,14 +139,15 @@ export const screens = [
   // Screen 6: слежка
   {
     id: 'screen-6',
-    title: 'Bad Wrap Up',
+    title: 'Слежка и лупа',
+    info: 'Начав расследование, мы проследим за девушкой до отеля, где обнаружим, что она встречается с богатым любовником. Мы сможем наблюдать в бинокль, что она занимается сексом с мужчиной и подглядывание второй способ получения адалт контента, как “декорация” первой мини-игры. В бинокль мы в итоге заметим, что на другой стороне заправки за девушкой кто-то следит и снимает на камеру. Мы понимаем, что это сталкер, но он замечает нас и убегает. Мы обыскиваем место и находим улики ведущие в городской архив.',
     images: {
       male: './assets/scene4-1.png',
       female: './assets/scene4-1.png'
     },
     texts: {
-      male: 'John feels the partnership is strained.',
-      female: 'Jane feels the partnership is strained.'
+      male: 'Нажмите на бинокль в верхнем правом углу',
+      female: 'Нажмите на бинокль в верхнем правом углу'
     },
     actions: {},
     customScripts: [
