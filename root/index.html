@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detective Visual Novel</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <div class="game">
+    <div class="screen">
+      <img class="screen__image" src="" alt="scene" />
+      <div class="screen__title"></div>
+      <div class="screen__relationship">0</div>
+      <div class="screen__text"></div>
+      <div class="screen__controls">
+        <button class="screen__button screen__button--back">Back</button>
+        <button class="screen__button screen__button--next">Next</button>
+      </div>
+      <div class="screen__characters">
+        <button class="screen__character screen__character--male" data-character="male">♂</button>
+        <button class="screen__character screen__character--female" data-character="female">♀</button>
+      </div>
+      <div class="screen__actions" aria-label="Screen actions"></div>
+      <div class="screen__choices"></div>
+      <div class="screen__overlay" style="display: none;"></div>
+      <div class="screen__info" style="display: none;">
+        <div class="screen__info-content">
+          <button class="screen__info-arrow screen__info-arrow--prev">&#9664;</button>
+          <div class="screen__info-text"></div>
+          <button class="screen__info-arrow screen__info-arrow--next">&#9654;</button>
+        </div>
+        <button class="screen__info-toggle">&#9660;</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="src/scripts/app.js"></script>
+</body>
+</html>

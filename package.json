@@ -1,0 +1,8 @@
+{
+  "name": "visual-novel-prototype",
+  "version": "1.0.0",
+  "description": "Prototype for a detective visual novel.",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  }
+}
