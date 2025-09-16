@@ -5,8 +5,8 @@ export const screens = [
     title: 'Start',
     info: 'info 1',
     images: {
-      male: '../assets/scene1.png',
-      female: '../assets/scene1.png'
+      male: './assets/scene1.png',
+      female: './assets/scene1.png'
     },
     texts: {
       male: 'Detective John arrives at the office.',
@@ -20,8 +20,8 @@ export const screens = [
     title: 'Introduction',
     info: 'info 2',
     images: {
-      male: '../assets/scene2.png',
-      female: '../assets/scene2.png'
+      male: './assets/scene2.png',
+      female: './assets/scene2.png'
     },
     texts: {
       male: 'male 2',
@@ -35,8 +35,8 @@ export const screens = [
     title: 'Case',
     info: 'info 3',
     images: {
-      male: '../assets/scene3-1.png',
-      female: '../assets/scene3-2.png'
+      male: './assets/scene3-1.png',
+      female: './assets/scene3-2.png'
     },
     texts: {
       male: 'Хочет поговорить только с мужичной',
@@ -56,8 +56,8 @@ export const screens = [
     title: 'Case',
     info: 'info 3',
     images: {
-      male: '../assets/scene3-3.png',
-      female: '../assets/scene3-3.png'
+      male: './assets/scene3-3.png',
+      female: './assets/scene3-3.png'
     },
     texts: {
       male: 'John examines the crime scene.',
@@ -78,8 +78,8 @@ export const screens = [
     title: 'Case',
     info: 'info 3',
     images: {
-      male: '../assets/scene3-4.png',
-      female: '../assets/scene3-4.png'
+      male: './assets/scene3-4.png',
+      female: './assets/scene3-4.png'
     },
     texts: {
       male: 'John examines the crime scene.',
@@ -118,8 +118,8 @@ export const screens = [
     title: 'Introduction',
     info: 'info 2',
     images: {
-      male: '../assets/scene3-4.png',
-      female: '../assets/scene3-4.png'
+      male: './assets/scene3-4.png',
+      female: './assets/scene3-4.png'
     },
     texts: {
       male: 'male 2',
@@ -141,8 +141,8 @@ export const screens = [
     id: 'screen-6',
     title: 'Bad Wrap Up',
     images: {
-      male: '../assets/scene4-1.png',
-      female: '../assets/scene4-1.png'
+      male: './assets/scene4-1.png',
+      female: './assets/scene4-1.png'
     },
     texts: {
       male: 'John feels the partnership is strained.',
@@ -153,7 +153,7 @@ export const screens = [
       {
         id: 'magnifier',
         options: {
-          image: '../assets/scene4-2.png',
+          image: './assets/scene4-2.png',
           label: 'Open spyglass view',
           closeLabel: 'Close spyglass view'
         }
